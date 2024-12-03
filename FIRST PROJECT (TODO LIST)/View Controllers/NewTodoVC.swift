@@ -98,8 +98,7 @@ extension NewTodoVC:  UIImagePickerControllerDelegate & UINavigationControllerDe
 
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
      
-        // i will ask why originalImage work and editedImage doesnot work
-      // todoImageView.image = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
+      
         
         dismiss(animated: true)
         todoImageView.image = image

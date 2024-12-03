@@ -1,9 +1,4 @@
-//
-//  TodosVC.swift
-//  FIRST PROJECT (TODO LIST)
-//
-//  Created by mac on 26/09/2024.
-//
+
 
 import UIKit
 import CoreData
@@ -12,10 +7,7 @@ class TodosVC: UIViewController {
     
     
     var todosArray:[ToDo] = []
-       // ToDo(title: "Studying" , image: UIImage(named: "study")!, details: "I will start to study after pray at morning"),
-       // ToDo(title: "Cooking" , image: UIImage(named:"cook")!, details: "I will cook after finish my studying"),
-      //  ToDo(title: "Praying", image: UIImage(named: "pray")!, details: "I will pray for five times per day"),
-      //  ToDo(title: "Go TO Gym" , image:UIImage(named:"gym")!, details: " after finish all my todos i will go to gym"),
+    
         
         
     @IBOutlet weak var todosTabelView: UITableView!
