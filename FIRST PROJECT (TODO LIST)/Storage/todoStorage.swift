@@ -90,14 +90,14 @@ class todoStorage {
             let result = try managedContext.fetch(fetchRequest) as! [NSManagedObject]
             
             for managedTodo in result {
-                let _ = managedTodo.value(forKey: "title") as? String
-                let _ = managedTodo.value(forKey: "details")as? String
+                let title = managedTodo.value(forKey: "title") as! String
+                let details = managedTodo.value(forKey: "details")as! String
                 
                 var todoImage: UIImage? = nil
                 if let storedImageData = managedTodo.value(forKey: "image") as? Data{
                     todoImage = UIImage(data: storedImageData)
                 }
-                let todo = ToDo(title: "title" ,image:  todoImage, details: "details" )
+                let todo = ToDo(title: title ,image:  todoImage, details: details )
                     todos.append(todo)
                     
             }
